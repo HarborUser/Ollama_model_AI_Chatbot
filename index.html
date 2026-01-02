@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>Ask anything related to fun facts about cats, The Planet Jupiter, Devcansol on how they tackle Data Solutions to their clients </h2>
+
+  
+
+  <input id="question" placeholder="Ask something..." />
+  <button onclick="ask()">Ask</button>
+
+  <pre id="answer"></pre>
+
+  <script>
+    async function ask() {
+      const question = document.getElementById("question").value;
+
+      const res = await fetch("http://localhost:3000/ask", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question }),
+      });
+
+      const data = await res.json();
+      document.getElementById("answer").textContent = data.answer;
+    }
+  </script>
+</body>
+</html>
