@@ -16,7 +16,6 @@ LLM: Ollama Llama3
 
 - Make it more user-friendly by designing it to look like a chatbot and keeping track of all queries sent to the LLM.  
 - Deploying to the cloud is preferable because of CPU constraints; currently, response times can be very slow (generally around 1–5 minutes).
-- It doesn't clear out previous query asked, instead the user must work with a simple textbox to enter their queries.
 
 ## Prerequisites
 
