@@ -1,6 +1,6 @@
-# Project Title
+# Project
 
-Build a Domain-Specific AI Chatbot using Retrieval-Augmented Generation (RAG)
+Build a Financial Advice AI Chatbot using Retrieval-Augmented Generation (RAG)
 
 ## Architecture
 
